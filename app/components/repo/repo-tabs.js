@@ -6,8 +6,7 @@
 import React, { Component } from 'react'
 import { Animated, View, StyleSheet } from 'react-native'
 import { TabViewAnimated, TabBar } from 'react-native-tab-view'
-import SearchUsers from './search-users'
-import colors from '../colors'
+import colors from '../../colors'
 
 const styles = StyleSheet.create({
   container: {
@@ -64,7 +63,7 @@ export default class RepoTabs extends Component {
       <TabBar
         {...props}
         pressColor={colors.red + '40'}
-        renderLabel={this.renderLabel(props)}
+        renderLabel={this.renderLabel}
         indicatorStyle={styles.indicator}
         tabStyle={styles.tab}
         style={{backgroundColor: colors.grey0}} />
@@ -74,11 +73,11 @@ export default class RepoTabs extends Component {
   renderScene ({ route }) {
     switch (route.key) {
       case '1':
-        return <SearchUsers query={this.props.query} />
+        return <View query={this.props.query} />
       case '2':
-        return <SearchUsers query={this.props.query} />
+        return <View query={this.props.query} />
       case '3':
-        return <SearchUsers query={this.props.query} />
+        return <View query={this.props.query} />
       default:
         return null
     }

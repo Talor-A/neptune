@@ -3,10 +3,10 @@
  */
 import React from 'react'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import {View} from 'react-native'
-import Row from '../basics/row'
-import Mono from '../atoms/mono'
-import colors from '../colors'
+import { View } from 'react-native'
+import Row from '../../basics/layout/row'
+import Mono from '../../basics/text/mono'
+import colors from '../../colors'
 export default function FileList (props) {
   function getName (file) {
     if (file.type === 'dir') return 'folder-outline'

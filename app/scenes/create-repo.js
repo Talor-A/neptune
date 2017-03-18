@@ -6,19 +6,18 @@
 import React, { Component } from 'react'
 import {
   StyleSheet,
-  View,
-  Picker
+  View
 } from 'react-native'
 import MainContainer from '../containers/main-container'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import API from '../api/api'
-import Text from '../atoms/text'
-import Input from '../atoms/input'
-import Title from '../atoms/title'
-import Button from '../atoms/button'
-import Row from '../basics/row'
-import Toggle from '../components/toggle-row'
-import Select from '../components/select-row'
+import Button from '../basics/input/button'
+import Text from '../basics/text/text'
+import Title from '../basics/text/title'
+import Input from '../basics/input/input'
+import Row from '../basics/layout/row'
+import Toggle from '../basics/input/toggle-row'
+import Select from '../basics/input/select-row'
 import colors from '../colors'
 import github from '../github'
 import Utils from '../utils'
@@ -49,12 +48,17 @@ export default class CreateRepo extends Component {
 
   componentWillMount () {
     API.getLicenses()
-      .then(data => this.setState({licenses: data}))
+      .then(data => {
+        data.unshift({name: 'none', key: 'none'})
+        this.setState({licenses: data})
+      })
+      .catch(e => console.warn('error getting licenses: ' + e))
     github.misc.getGitignoreTemplates({})
       .then(res => {
+        res.data.unshift('none')
         this.setState({gitIgnoreTemplates: res.data})
       })
-      .catch(err => console.warn('err! ' + err))
+      .catch(e => console.warn('error getting templates: ' + e))
     this.onChangeTitle = Utils.debounce(this.onChangeTitle, 10000, true)
   }
   onChangeTitle (text) {
@@ -68,30 +72,6 @@ export default class CreateRepo extends Component {
       .catch(err => console.warn('no repos! ' + err))
   }
 
-  renderPickers () {
-    return (
-      <View>
-        <Picker
-          prompt={'hello'}
-          mode={'dropdown'}
-          style={{color: 'white'}}
-          onValueChange={value => this.setState({license_template: value})}
-         />
-        <Picker
-          mode={'dropdown'}
-          style={{color: 'white'}}
-        >
-          {this.state.gitIgnoreTemplates.map(template => {
-            return <Picker.Item
-              key={template}
-              value={template}
-              label={template}
-            />
-          })}
-        </Picker>
-      </View>
-    )
-  }
   renderOptions () {
     let newRepo = this.state.newRepo
     let togglePrivate = () => {
@@ -103,7 +83,13 @@ export default class CreateRepo extends Component {
       this.setState({newRepo})
     }
     let setLicense = (value) => {
-      newRepo.license_template = value
+      console.warn('value: ' + value)
+      newRepo.license_template = value === 'none' ? null : value
+      this.setState({newRepo})
+    }
+    let setGitIgnore = (value) => {
+      console.warn('value:' + value)
+      newRepo.gitIgnoreTemplate = value
       this.setState({newRepo})
     }
     return (
@@ -115,17 +101,18 @@ export default class CreateRepo extends Component {
           icon={['lock-open-outline', 'lock-outline']}
         />
         <Toggle
-          text={'Initialize this repository with a readme: '}
+          text={'Initialize this repository with a readme: ' + (newRepo.auto_init ? 'yes' : 'no')}
           onPress={() => toggleReadme()}
           enabled={newRepo.auto_init}
         />
         <Select
+          onValueChange={setGitIgnore}
           text={'Create .gitignore: ' + (newRepo.gitIgnoreTemplate || 'no')}
           enabled={!!newRepo.gitIgnoreTemplate}
           options={this.state.gitIgnoreTemplates.map(template => {
             return ({
-              label: template || 'INVALID',
-              value: template || 'INVALID'
+              label: template,
+              value: template
             })
           })}
         />
@@ -135,8 +122,8 @@ export default class CreateRepo extends Component {
           enabled={!!newRepo.license_template}
           options={this.state.licenses.map(license => {
             return ({
-              label: license.name || 'INVALID',
-              value: license.key || 'INVALID'
+              label: license.name || 'default',
+              value: license.key || 'default'
             })
           })}
         />
@@ -189,6 +176,7 @@ export default class CreateRepo extends Component {
           </View>
 
           {this.renderOptions()}
+          <Text>{JSON.stringify(this.state.newRepo)}</Text>
         </View>
         <Button
           title={'Create ' + newRepo.name + '!'}

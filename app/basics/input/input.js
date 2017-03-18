@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import {TextInput} from 'react-native'
-import colors from '../colors'
+import colors from '../../colors'
 export default function Input (props) {
   return (
     <TextInput

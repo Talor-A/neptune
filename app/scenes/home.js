@@ -8,20 +8,15 @@ import {
   ScrollView,
   View
 } from 'react-native'
-import Text from '../atoms/text'
-import Card from '../atoms/card'
-import Button from '../atoms/button'
+import Text from '../basics/text/text'
+import Button from '../basics/input/button'
 import gradients from '../gradients'
 import LinearGradient from 'react-native-linear-gradient'
-
+import GQLWithData from './graphql-test'
 export default class Home extends Component {
   renderHome (props) {
     return (
       <View style={{marginTop: 200}}{...props}>
-        <StatusBar
-          backgroundColor='black'
-          barStyle='light-content'
-        />
         <Button
           pad
           color='#334D5C'
@@ -56,7 +51,7 @@ export default class Home extends Component {
     )
   }
 
-  render () {
+  renderGradients () {
     return (
       <ScrollView>
         {gradients.map(gradient => {
@@ -76,5 +71,8 @@ export default class Home extends Component {
         })}
       </ScrollView>
     )
+  }
+  render () {
+    return <GQLWithData />
   }
 }

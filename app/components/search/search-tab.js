@@ -5,7 +5,7 @@ import React from 'react'
 import Text from '../atoms/text'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { TouchableOpacity } from 'react-native'
-import colors from '../colors'
+
 export default function SearchTab (props) {
   return (
     <TouchableOpacity

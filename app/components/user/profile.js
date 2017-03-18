@@ -9,12 +9,12 @@ import {
   View,
   Animated
 } from 'react-native'
-import Title from '../atoms/title'
-import RepositoryList from '../components/repository-list'
-import RepositoryCard from '../components/repository-card'
-import FollowersBar from '../basics/followers-bar'
+import Title from '../../basics/text/title'
+import Text from '../../basics/text/text'
+import RepositoryList from '../repository-list'
+import RepositoryCard from '../repository-card'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import colors from '../colors'
+import colors from '../../colors'
 
 const HEADER_MAX_HEIGHT = 200
 const HEADER_MIN_HEIGHT = 60
@@ -44,9 +44,9 @@ export default class Profile extends Component {
       outputRange: [0, -50],
       extrapolate: 'clamp'
     })
-    return (
+    return (this.props.user &&
       <Animated.View style={[styles.header, {height: headerHeight}]}>
-        <Animated.Image style={[ styles.backgroundImage, {opacity: imageOpacity, transform: [{translateY: imageTranslate}]} ]} source={{uri: this.props.user.avatar_url}} />
+        <Animated.Image style={[ styles.backgroundImage, {opacity: imageOpacity, transform: [{translateY: imageTranslate}]} ]} source={{uri: this.props.user.avatarURL}} />
         <View style={styles.bar}>
           <Icon name='account-plus' size={24} color='transparent' />
           <Title>
@@ -59,7 +59,7 @@ export default class Profile extends Component {
   }
 
   renderRepos () {
-    return this.props.repos && this.props.repos.map(repo => {
+    return this.props.user && this.props.user.repositories.nodes.map(repo => {
       return <RepositoryCard repo={repo} key={repo.id} />
     })
   }
@@ -71,8 +71,8 @@ export default class Profile extends Component {
           nativeEvent: {contentOffset: {y: this.state.scrollY}}
         }])}>
           <View style={styles.scrollViewContent}>
-            <FollowersBar followers={this.props.user.followers} following={this.props.user.following} stars={this.props.user.stars} />
             {this.renderRepos()}
+            <Text>{JSON.stringify(this.props.user)}</Text>
           </View>
         </RepositoryList>
         {this.renderHeader()}

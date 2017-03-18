@@ -4,25 +4,36 @@
 import React from 'react'
 import {TouchableOpacity, StyleSheet, Picker, View, Dimensions} from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import Row from '../basics/row'
-import colors from '../colors'
-import Text from '../atoms/text'
+import Row from '../layout/row'
+import Text from '../text/text'
+import colors from '../../colors'
 
 export default function Select (props) {
   let {
     text,
     icon,
     options,
-    selected,
+    onValueChange,
     enabled
   } = props
+  let pickerItems = []
+  options.map(i => {
+    pickerItems.push(
+      <Picker.Item
+        label={i.label}
+        value={i.value}
+        key={i.value}
+      />
+    )
+  })
   return (
     <View style={{borderWidth: 0}}>
       <TouchableOpacity
         activeOpacity={0.7}
         style={styles.row}
-        onPress={() => {}}
-      >
+        onPress={
+          () => {}
+      }>
         <Row>
           <Text style={styles.text}>
             {text}
@@ -35,6 +46,7 @@ export default function Select (props) {
         </Row>
       </TouchableOpacity>
       <Picker
+        onValueChange={onValueChange}
         mode={'dropdown'}
         style={{
           position: 'absolute',
@@ -43,14 +55,7 @@ export default function Select (props) {
           height: Dimensions.get('window').height / 2,
           color: 'red'
         }}>
-        <Picker.Item label='None' value={null} />
-        {props.options.map(i => {
-          return <Picker.Item
-            label={i.label || 'INVALID'}
-            value={i.value || 'INVALID'}
-            key={Math.random()}
-          />
-        })}
+        {pickerItems}
       </Picker>
     </View>
   )
@@ -63,7 +68,7 @@ const styles = StyleSheet.create({
   },
   row: {
     borderTopColor: colors.grey2,
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth * 2,
     paddingVertical: 16,
     paddingHorizontal: 4
   }

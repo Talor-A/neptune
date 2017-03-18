@@ -16,10 +16,16 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "apollo-client": "^1.0.0-rc.3",
+    "base-64": "^0.1.0",
     "github": "git+https://github.com/brunolemos/react-native-github-api.git",
+    "graphql-tag": "^1.3.1",
+    "moment": "^2.18.0",
     "react": "~15.4.0",
+    "react-apollo": "^1.0.0-rc.3",
     "react-native": "0.41.2",
     "react-native-linear-gradient": "^2.0.0",
+    "react-native-simple-markdown": "git+https://github.com/Talor-A/react-native-simple-markdown.git",
     "react-native-tab-view": "0.0.57",
     "react-native-vector-icons": "^4.0.0",
     "react-navigation": "^1.0.0-beta.7"

@@ -5,8 +5,8 @@ import {
     StyleSheet,
     TouchableOpacity
 } from 'react-native'
-import Text from './text'
-import colors from '../colors'
+import Text from '../text/text'
+import colors from '../../colors'
 
 Button.propTypes = {
   color: React.PropTypes.any,

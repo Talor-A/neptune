@@ -4,9 +4,9 @@
 import React from 'react'
 import {TouchableOpacity, StyleSheet} from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import Row from '../basics/row'
-import Text from '../atoms/text'
-import colors from '../colors'
+import Row from '../layout/row'
+import Text from '../text/text'
+import colors from '../../colors'
 Toggle.propTypes = {
   text: React.PropTypes.string.isRequired,
   enabled: React.PropTypes.bool.isRequired,
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
   row: {
     borderTopColor: colors.grey2,
-    borderTopWidth: 1,
+    borderTopWidth: StyleSheet.hairlineWidth * 2,
     paddingVertical: 16,
     paddingHorizontal: 4
   }
