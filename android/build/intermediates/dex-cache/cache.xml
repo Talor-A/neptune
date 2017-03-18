@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_dede604f7aa78a588156876eb9deeb5d97539d09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_5829820859136e4054effb0dc5e79b6dd9b6f19f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_31fe84d589e34221762c966ad2deaa6c99f72103.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_4a74b8d981c8dbef771dfd6c80dfa700e5b3938c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/library-2.4.0_babba4a7e97e9cc6b9f8e15a6ee324f2ccde0f8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/neptune/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="21ef913418758caa0a6ddaf988523757aeb488ef">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/neptune-react-native-vector-icons-unspecified_6f7bbca0edd0bff5a79d71165da2b80af9d6791a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-0.11.0_7e5bde2f57d020d43f694e5a0da2ef959a07b9e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-0.11.0_6354dba29a6964265a3727b32f2d6117d3a5db8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b49a04a3016689b372ecbb77f0c33e486e768cca">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.41.2_22b430da022a063cdd86841841373cdadb97c9ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_081c8b53f33756f60779d09e6c5d104c9e1029d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-0.11.0_d6e150357f0ebe33d8e6852bd5bb5ee315965df9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-0.11.0_34defd48dc7c8667bc7cc06afa2cb41579712395.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_caa5bf90a1d42c938170734bd25007bc9faee4d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_24fbc3196f1c7c69ab2157401a584ea31cc2fec1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.41.2/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_68fd76cb5b037d60760a553c2f540024316df11c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_3b4c3ec845520d46e50c955eff4829dbeed4fea0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_7e9519561a9cf83e6942466e9396384fe2f44daf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-0.11.0_78f9538aae8420806e37f0ca52af93c3580e5d7a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_ade32404ce8ce40dbd95e3df3657519df3a8836f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/neptune/react-native-linear-gradient/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b8230b0573b0b936fe516876070398a14572469e">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/neptune-react-native-linear-gradient-unspecified_4dbe4823f488d8c7a241928c03dc920c13a1e86c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_751fe3175330bd5aa6de2c701194941c8e33ec43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_8467f2d01176c92e3795c396d3651f9e152967c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_346cdabaa6c0549cb548e780accbb82a55b9f4b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_34524136c1f5f041ffa937f8468ee956d6ce241a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-0.11.0_0a5692453288646e7c80b7b39fc7c9ff455f1ac6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ta/git/neptune/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/ta/git/neptune/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_44096e8cac17c9e99386aad0dd3bec12f4836bdd.jar" />
+    </item>
+
+</items>
