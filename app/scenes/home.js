@@ -12,45 +12,26 @@ import Text from '../basics/text/text'
 import Button from '../basics/input/button'
 import gradients from '../gradients'
 import LinearGradient from 'react-native-linear-gradient'
-import GQLWithData from './graphql-test'
-export default class Home extends Component {
-  renderHome (props) {
-    return (
-      <View style={{marginTop: 200}}{...props}>
-        <Button
-          pad
-          color='#334D5C'
-          title='View a User Profile'
-          onPress={() => { this.props.navigation.navigate('Profile', {username: 'talor-a'}) }}
-        />
-        <Button
-          pad
-          color='#45B29D'
-          title='View a Repo'
-          onPress={() => {}}
-        />
-        <Button
-          pad
-          color='#EFC94C'
-          title='Login'
-          onPress={() => { this.props.navigation.navigate('LoginWebView') }}
-        />
-        <Button
-          pad
-          color='#E27A3F'
-          title='Create a Repo'
-          onPress={() => {}}
-        />
-        <Button
-          pad
-          color='#DF5A49'
-          title='View a Repo'
-          onPress={() => {}}
-        />
-      </View>
-    )
-  }
+import Markdown from '../basics/text/markdown'
 
+const text = `
+## Installation
+
+Just the \`markdown\` library:
+
+    npm install markdown
+
+Optionally, install \`md2html\` into your path
+
+    npm install -g markdown
+
+### In the browser
+
+If you want to use from the browser go to the [releases] page on GitHub and
+download the version you want (minified or not).
+
+`
+export default class Home extends Component {
   renderGradients () {
     return (
       <ScrollView>
@@ -73,6 +54,10 @@ export default class Home extends Component {
     )
   }
   render () {
-    return <GQLWithData />
+    return (
+      <ScrollView>
+        <Markdown text={text} />
+      </ScrollView>
+    )
   }
 }

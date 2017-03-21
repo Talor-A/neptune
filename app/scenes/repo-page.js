@@ -74,7 +74,7 @@ export default class RepoPage extends Component {
         }
       }}
     >
-      {this.state.readme}
+      {JSON.stringify(this.state.readme)}
     </Markdown>)
   }
   render () {
@@ -84,7 +84,10 @@ export default class RepoPage extends Component {
         <FileList
           content={this.state.content}
         />
-        {this.renderReadme()}
+        <View>
+          {this.renderReadme()}
+          <Text>{this.state.readme}</Text>
+        </View>
       </ScrollView>
     )
   }
